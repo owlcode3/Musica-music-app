@@ -1,0 +1,19 @@
+.spinner {
+  margin: 0 auto;
+  justify-self: center;
+  div {
+    @include flex(center, center);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1px;
+  }
+  span {
+    animation: 2s rotation infinite linear;
+  }
+
+  img {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+  }
+}

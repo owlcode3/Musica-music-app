@@ -1,0 +1,42 @@
+.not-found {
+  color: $color-grey-light;
+  font-size: 1.3rem;
+  padding: 12rem 1rem;
+
+  &__box {
+    @include flex(center, center, 2rem);
+    flex-direction: column;
+  }
+
+  &__lists {
+    @include flexCol;
+    font-size: 3rem;
+    align-items: center;
+  }
+
+  &__list {
+    @include flex(center);
+  }
+  a,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-grey-light;
+    @include flex(center, center, 0.5rem);
+    border-radius: 5px;
+    border: 1px solid var(--nsi-clr);
+    width: 16rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    img {
+      filter: invert(96%) sepia(95%) saturate(7497%) hue-rotate(312deg) brightness(107%) contrast(96%);
+    }
+  }
+
+  &__body {
+    text-align: center;
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+}

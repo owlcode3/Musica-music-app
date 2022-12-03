@@ -1,0 +1,67 @@
+/// Media Query Manager
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile_xl {
+    @media (min-width: 31.25em) {
+      // 500px / 16px = 31.25em
+      @content;
+    }
+  }
+
+  @if $breakpoint == iPad {
+    @media (min-width: 43.75em) {
+      // 700px / 16px = 43.75em
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (min-width: 50em) {
+      // 800px / 16px = 50em
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media (min-width: 64em) {
+      // 1024px / 16px = 64em
+      @content;
+    }
+  }
+}
+
+@mixin flex($ai: null, $jc: null, $gap: null) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  @supports (row-gap: $gap) {
+    row-gap: $gap;
+  }
+  & > *:not(:last-child) {
+    margin-right: $gap;
+  }
+}
+
+@mixin flexCol($gap: null) {
+  display: flex;
+  flex-direction: column;
+  @supports (column-gap: $gap) {
+    column-gap: $gap;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: $gap;
+  }
+}
+
+@mixin scroll {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  @include respond(iPad) {
+    width: 2.5rem;
+    height: 3rem;
+  }
+}

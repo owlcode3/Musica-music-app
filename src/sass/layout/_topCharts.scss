@@ -1,0 +1,155 @@
+.top-charts {
+  padding-top: 1rem;
+
+  &__box {
+    @include flexCol(1rem);
+    @include respond(laptop) {
+    }
+  }
+
+  &__heading {
+    padding-left: 2rem;
+  }
+
+  &__card-box {
+    display: grid;
+    grid-template-columns: repeat(4, 35rem);
+    column-gap: 2rem;
+    padding: 0 2rem;
+    overflow-x: scroll;
+    list-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 0;
+      display: none;
+    }
+    @include respond(laptop) {
+      @include flexCol(1rem);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-light;
+    &-hide {
+      @include respond(laptop) {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    height: 26rem;
+    padding: 1.8rem;
+    background-color: var(--side-clr);
+    border-radius: var(--bdr);
+    @include flex(flex-start);
+    @include respond(laptop) {
+      display: block;
+      height: 7rem;
+      padding: 1rem;
+    }
+  }
+
+  &__detail {
+    @include flex(flex-start, space-between);
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    @include respond(laptop) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__img-box {
+    @include flex($jc: space-between);
+    width: 100%;
+    @include respond(laptop) {
+      align-items: center;
+    }
+  }
+
+  &__like {
+    align-self: flex-start;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.11);
+    @include flex(center, center);
+    @include respond(laptop) {
+      width: 3rem;
+      height: 3rem;
+      align-self: center;
+    }
+  }
+
+  &__artist-box-lpt {
+    display: none;
+    width: 40%;
+
+    @include respond(laptop) {
+      display: block;
+      margin-right: auto;
+    }
+    h2,
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    h2,
+    h3,
+    span {
+      @include respond(laptop) {
+        font-size: 1rem;
+      }
+    }
+    h3 {
+      @include respond(laptop) {
+        font-family: "quicksandlight", sans-serif;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__artist-box {
+    width: 60%;
+    @include respond(laptop) {
+      display: none;
+    }
+    h2,
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    h3 {
+      font-weight: 400;
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+      @include respond(laptop) {
+        font-size: 0.5rem;
+      }
+    }
+    span {
+      margin-top: 5rem;
+      font-size: 1.3rem;
+      @include respond(laptop) {
+        padding-bottom: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__image {
+    height: 11rem;
+    border-radius: 10px;
+    @include respond(laptop) {
+      height: 4rem;
+      margin-right: 2rem;
+    }
+  }
+}

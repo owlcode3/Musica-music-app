@@ -1,0 +1,47 @@
+.header {
+  padding: 2rem 0;
+  @include respond(laptop) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 7rem;
+    right: 0;
+    z-index: 99;
+    background-color: var(--primary-clr);
+  }
+
+  &__box {
+    @include flex(center);
+    @include respond(laptop) {
+    }
+  }
+
+  &__music {
+    margin-right: auto;
+    @include respond(laptop) {
+      display: none;
+    }
+    a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    width: 2.5rem;
+    display: block;
+    cursor: pointer;
+    @include respond(laptop) {
+      width: 2.2rem;
+    }
+  }
+
+  &__menu {
+    margin-right: 2rem;
+    @include respond(laptop) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,183 @@
+.music-player-board {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: hsla(200, 9%, 13%, 0.9);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  @include flex(center, center);
+  z-index: 99999;
+  @supports (backdrop-filter: blur(15px)) {
+    backdrop-filter: blur(15px);
+    background: hsla(200, 9%, 13%, 0.3);
+  }
+
+  &__box {
+    width: 100%;
+    padding: 0 2rem 0 1rem;
+    @include flex(flex-start, space-between);
+    @include respond(tablet) {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+    }
+  }
+
+  &__img-box {
+    @include flex(center, $gap: 1rem);
+    img {
+      height: 6.5rem;
+      box-shadow: 0px 15px 17px -10px rgba(0, 0, 0, 0.61);
+      border-radius: 14px;
+    }
+
+    h2 {
+      @include respond(tablet) {
+        font-size: 1.2rem;
+      }
+    }
+
+    span {
+      font-size: 1.3rem;
+      @include respond(tablet) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__play-box {
+    @include flexCol(1rem);
+    display: none;
+    @include respond(tablet) {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__icons {
+    @include flex(center, $gap: 3rem);
+    justify-content: center;
+  }
+
+  &__play-pause-box {
+    @include flex(center);
+    background-color: var(--tertiary-clr);
+    border-radius: 50%;
+  }
+
+  &__repeat,
+  &__shuffle {
+    cursor: pointer;
+    display: flex;
+  }
+
+  &__prev,
+  &__next,
+  &__play,
+  &__pause {
+    width: 2rem;
+    cursor: pointer;
+  }
+
+  &__music-duration {
+    @include flex(center, space-between);
+    padding: 0 1rem;
+    grid-column: 1 / -1;
+    width: 90%;
+  }
+
+  &__current-time {
+    width: 6%;
+  }
+
+  &__duration {
+    width: 6%;
+    text-align: right;
+  }
+
+  &__play-status {
+    width: 86%;
+    height: 0.2rem;
+    border-radius: 20px;
+    @include flex(center, flex-start);
+    background-color: var(--tertiary-clr);
+    cursor: pointer;
+  }
+
+  &__play-width-update {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: var(--icon-clr);
+    border-radius: 20px;
+  }
+
+  &__play-width-rb {
+    @include flex(center, center);
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid var(--tertiary-clr);
+    border-radius: 50px;
+    margin-right: -0.3rem;
+    span {
+      width: 0.4rem;
+      height: 0.4rem;
+      background-color: var(--icon-clr);
+      border-radius: 50px;
+    }
+  }
+
+  &__volume {
+    @include flex(center, $gap: 0.2rem);
+  }
+
+  &__volume-status {
+    @include flex(center, flex-start);
+    width: 70%;
+    height: 0.2rem;
+    border-radius: 20px;
+    background-color: var(--tertiary-clr);
+    cursor: pointer;
+    span {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: var(--icon-clr);
+    }
+  }
+
+  &__mobile {
+    @include flex(center, $gap: 1.5rem);
+    align-self: center;
+    padding-right: 1rem;
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
+  &__prev-mobile,
+  &__next-mobile,
+  &__play-mobile,
+  &__pause-mobile {
+    width: 3rem;
+  }
+}
+
+.music-progress-mobile {
+  position: absolute;
+  top: 0;
+  height: 0.1rem;
+  width: 100%;
+  @include respond(tablet) {
+    display: none;
+  }
+  span {
+    background-color: var(--icon-clr);
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}

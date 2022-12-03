@@ -1,0 +1,82 @@
+.new-release__section {
+  padding: 0;
+  color: $color-grey-light;
+  position: relative;
+  @include respond(laptop) {
+    grid-column: 1 /-1;
+  }
+}
+
+.new-release__section .container {
+  padding: 0;
+}
+
+.new-release {
+  @include flexCol(1.5rem);
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 2rem;
+  }
+
+  &__box {
+    padding: 0 2rem;
+    list-style: none;
+    @include flex(center, $gap: 2rem);
+    overflow-x: auto;
+    scrollbar-width: none;
+    scrollbar-width: 0;
+    @include respond(laptop) {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 0;
+      display: none;
+    }
+  }
+
+  &__card {
+    @include flexCol(1rem);
+    align-items: flex-start;
+    width: 25rem;
+    height: 29rem;
+    cursor: pointer;
+    img {
+      width: 25rem;
+      height: 82%;
+    }
+  }
+
+  &__texts {
+    width: 22rem;
+    height: 13%;
+
+    h2 {
+      font-size: 1.2rem;
+      padding-bottom: 0.1rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+    }
+    h2,
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.scroll-next {
+  right: 2rem;
+  @include scroll;
+}
+
+.scroll-prev {
+  left: 2rem;
+  @include scroll;
+}

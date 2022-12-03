@@ -1,0 +1,86 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100vh;
+  background-color: var(--side-clr);
+  padding: 8rem 0 0 3rem;
+  z-index: 999;
+  transition: all 0.5s;
+  @include respond(laptop) {
+    position: fixed;
+    left: 0;
+    width: 7rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    background-color: var(--primary-clr);
+  }
+
+  &--from-left {
+    left: 0;
+  }
+
+  &__lists {
+    list-style: none;
+    @include flexCol(3.5rem);
+    @include respond(laptop) {
+      align-items: center;
+      row-gap: 2rem;
+    }
+  }
+
+  &__border {
+    @include flexCol(2.5rem);
+    @include respond(laptop) {
+      background-color: var(--side-clr);
+      border-radius: 40px;
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  &__list {
+    @include flex(center, $gap: 2rem);
+    &--desktop {
+      display: none;
+      @include respond(laptop) {
+        display: block;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    color: var(--nsi-clr);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    @include flex(center, $gap: 1.5rem);
+    @include respond(laptop) {
+      width: 3rem;
+      display: block;
+    }
+    span:first-child {
+      @include flex(center, center);
+      @include respond(laptop) {
+        width: 100%;
+      }
+      svg {
+        width: var(--space-lg);
+        height: var(--space-lg);
+      }
+    }
+    span:last-child {
+      @include respond(laptop) {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    width: var(--space-lg);
+  }
+}

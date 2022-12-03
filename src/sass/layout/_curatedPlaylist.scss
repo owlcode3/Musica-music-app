@@ -1,0 +1,96 @@
+.curated-playlist {
+  padding: 0 1rem;
+  height: 52rem;
+  @include flex($jc: center);
+  @include respond(laptop) {
+    justify-content: flex-start;
+    height: 30rem;
+  }
+
+  &__box {
+    position: relative;
+    background-color: var(--secondary-clr);
+    height: 100%;
+    width: 96%;
+    border-radius: var(--bdr);
+    overflow: hidden;
+    padding: 2rem 3rem;
+    display: flex;
+    @include respond(laptop) {
+      width: 100%;
+    }
+  }
+
+  &__texts {
+    width: 100%;
+    @include flexCol;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(laptop) {
+      align-items: flex-start;
+    }
+  }
+
+  &__heading {
+    align-self: flex-start;
+  }
+
+  &__icon-glitter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include respond(laptop) {
+      right: 0;
+    }
+  }
+
+  &__icon-img {
+    display: none;
+    @include respond(laptop) {
+      display: block;
+      position: absolute;
+      top: 0.3rem;
+      right: 0;
+    }
+  }
+
+  &__user-likes {
+    @include flex(center, $gap: 1.5rem);
+  }
+
+  &__users {
+    @include flex(center);
+  }
+
+  &__icon-user {
+    width: 4rem;
+    &:not(:first-child) {
+      margin-left: -1.8rem;
+    }
+  }
+
+  &__likes {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+    @include flex(center, $gap: 0.7rem);
+  }
+
+  &__genre {
+    align-self: flex-start;
+    h1 {
+      font-family: "quicksandbold", sans-serif;
+      font-size: 3rem;
+      padding-bottom: 2rem;
+      @include respond(laptop) {
+        padding-bottom: 0.8rem;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      @include flexCol;
+    }
+  }
+}

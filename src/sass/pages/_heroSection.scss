@@ -1,0 +1,24 @@
+.hero__section {
+  color: $color-grey-light;
+  @include respond(laptop) {
+    margin-top: 6.5rem;
+  }
+}
+
+.hero__section .container {
+  padding: 0;
+  @include respond(laptop) {
+    padding-top: 1rem;
+  }
+}
+
+.hero {
+  @include flexCol(3rem);
+  @include respond(laptop) {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0;
+  }
+}
