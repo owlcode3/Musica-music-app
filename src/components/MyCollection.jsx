@@ -1,4 +1,3 @@
-import React from "react";
 
 function MyCollection() {
    return (
@@ -10,7 +9,7 @@ function MyCollection() {
             </div>
             <ul className="my-collection__cards">
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-1.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-1.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -18,13 +17,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/Play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/Play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-2.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-2.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -32,13 +31,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -46,13 +45,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -60,13 +59,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -74,13 +73,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -88,13 +87,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -102,13 +101,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -116,13 +115,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -130,13 +129,13 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>
 
                <li className="my-collection__card">
-                  <img className="my-collection__img" src="/src//assets/my-cl-3.svg" alt="" />
+                  <img className="my-collection__img" src="/my-cl-3.svg" alt="" />
                   <div className="my-collection__details">
                      <div className="my-collection__name">
                         <h2>Limits</h2>
@@ -144,7 +143,7 @@ function MyCollection() {
                      </div>
                      <div className="my-collection__likes-play">
                         <span>2.3m Likes</span>
-                        <img className="my-collection__icon" src="/src/assets/play-mc.svg" alt="" />
+                        <img className="my-collection__icon" src="/play-mc.svg" alt="" />
                      </div>
                   </div>
                </li>

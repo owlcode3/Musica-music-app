@@ -57,19 +57,19 @@ function FreshTunes() {
                         }}
                      >
                         <span>
-                           <img src="/src/assets/mp-play.svg" alt="" />
+                           <img src="/mp-play.svg" alt="" />
                         </span>
                         Play all
                      </li>
                      <li>
                         <span>
-                           <img src="/src/assets/add-to-col.svg" alt="" />
+                           <img src="/add-to-col.svg" alt="" />
                         </span>{" "}
                         Add to collection
                      </li>
                      <li>
                         <span>
-                           <img src="/src/assets/add-to-hrt.svg" alt="" />
+                           <img src="/add-to-hrt.svg" alt="" />
                         </span>
                         Like
                      </li>
@@ -97,7 +97,7 @@ function FreshTunes() {
                                  src={song.cover}
                                  alt="cover image"
                               />
-                              <img src="/src/assets/tt-icon.svg" alt="" />
+                              <img src="/tt-icon.svg" alt="" />
                            </div>
 
                            <div className="tomorrow-tunes__lower-texts-box">
@@ -109,7 +109,7 @@ function FreshTunes() {
 
                            <div className="tomorrow-tunes__lower-time-box">
                               <span>{song.duration}</span>
-                              <img src="/src/assets/tt-more-vertical.svg" alt="" />
+                              <img src="/tt-more-vertical.svg" alt="" />
                            </div>
                         </li>
                      );

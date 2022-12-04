@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function NotFound() {
@@ -13,7 +12,7 @@ function NotFound() {
             <div className="not-found__body">
                <h1>Seems you've lost your way, why not go back?</h1>{" "}
                <Link to="/">
-                  <img src="/src/assets/home.svg" alt="" /> Home
+                  <img src="/assets/home.svg" alt="" /> Home
                </Link>
             </div>
          </div>

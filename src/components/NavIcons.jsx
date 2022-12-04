@@ -9,75 +9,75 @@ function NavIcons() {
    const [isProfileClicked, setIsProfileClicked] = useState(false);
    const [isLogoutClicked, setIsLogoutClicked] = useState(false);
 
-   function toHome() {
+   const toHome = () => {
       setIsRadioClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(false);
       setIsHomeClicked(true);
-   }
+   };
 
-   function homeClicked() {
+   const homeClicked = () => {
       setIsRadioClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(false);
       setIsHomeClicked(true);
-   }
+   };
 
-   function colClicked() {
+   const colClicked = () => {
       setIsHomeClicked(false);
       setIsRadioClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(true);
-   }
+   };
 
-   function radioClicked() {
+   const radioClicked = () => {
       setIsHomeClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(false);
       setIsRadioClicked(true);
-   }
+   };
 
-   function mvClicked() {
+   const mvClicked = () => {
       setIsHomeClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(false);
       setIsRadioClicked(false);
       setIsMvClicked(true);
-   }
+   };
 
-   function profileClicked() {
+   const profileClicked = () => {
       setIsHomeClicked(false);
       setIsLogoutClicked(false);
       setIsColClicked(false);
       setIsRadioClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(true);
-   }
+   };
 
-   function logoutClicked() {
+   const logoutClicked = () => {
       setIsHomeClicked(false);
       setIsColClicked(false);
       setIsRadioClicked(false);
       setIsMvClicked(false);
       setIsProfileClicked(false);
       setIsLogoutClicked(true);
-   }
+   };
 
    return (
       <ul className="nav__lists">
          <li onClick={toHome} className="nav__list nav__list--desktop">
             <Link to="/" className="nav__link">
                <span>
-                  <img className="nav__icon" src="/src/assets/logo.svg" alt="" />
+                  <img className="nav__icon" src="/logo.svg" alt="" />
                </span>
                <span>.</span>
             </Link>

@@ -129,7 +129,8 @@ function App() {
             setIsMenuOpen,
             setIsSearchOverlayOpen,
             accessToken,
-            windowWidth
+            windowWidth,
+            audio
          }}
       >
          <Header />

@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
 import StateContext from "@/StateContext";
+import { useContext, useEffect } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { useLocation } from "react-router-dom";
 import NavIcons from "./NavIcons";

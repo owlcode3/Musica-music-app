@@ -121,7 +121,7 @@ function MusicPlayerBoard({
                <img
                   onClick={previous}
                   className="music-player-board__prev-mobile"
-                  src="/src/assets/mp-previous.svg"
+                  src="/mp-previous.svg"
                   alt=""
                />
 
@@ -130,14 +130,14 @@ function MusicPlayerBoard({
                      <img
                         onClick={() => setIsPlaying(false)}
                         className="music-player-board__pause-mobile"
-                        src="/src/assets/mp-pause.svg"
+                        src="/mp-pause.svg"
                         alt=""
                      />
                   ) : (
                      <img
                         onClick={() => setIsPlaying(true)}
                         className="music-player-board__play-mobile"
-                        src="/src/assets/mp-play.svg"
+                        src="/mp-play.svg"
                         alt=""
                      />
                   )}
@@ -146,7 +146,7 @@ function MusicPlayerBoard({
                <img
                   onClick={next}
                   className="music-player-board__next-mobile"
-                  src="/src/assets/mp-next.svg"
+                  src="/mp-next.svg"
                   alt=""
                />
             </div>
@@ -181,7 +181,7 @@ function MusicPlayerBoard({
                   <img
                      onClick={previous}
                      className="music-player-board__prev"
-                     src="/src/assets/mp-previous.svg"
+                     src="/mp-previous.svg"
                      alt=""
                   />
                   <div className="music-player-board__play-pause-box">
@@ -189,14 +189,14 @@ function MusicPlayerBoard({
                         <img
                            onClick={() => setIsPlaying(false)}
                            className="music-player-board__pause"
-                           src="/src/assets/mp-pause.svg"
+                           src="/mp-pause.svg"
                            alt=""
                         />
                      ) : (
                         <img
                            onClick={() => setIsPlaying(true)}
                            className="music-player-board__play"
-                           src="/src/assets/mp-play.svg"
+                           src="/mp-play.svg"
                            alt=""
                         />
                      )}
@@ -204,7 +204,7 @@ function MusicPlayerBoard({
                   <img
                      onClick={next}
                      className="music-player-board__next"
-                     src="/src/assets/mp-next.svg"
+                     src="/mp-next.svg"
                      alt=""
                   />
                   <span
@@ -235,7 +235,7 @@ function MusicPlayerBoard({
                   </span>
                </div>
                <div className="music-player-board__volume">
-                  <img src="/src/assets/volume-high.svg" alt="" />
+                  <img src="/volume-high.svg" alt="" />
                   <div
                      onClick={volumeFunc}
                      ref={volumeRef}

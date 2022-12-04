@@ -1,8 +1,8 @@
-import { useGetNewMusicQuery } from "@/redux/services/musicaApi";
-import { useDispatch } from "react-redux";
 import { addCurTrack, addSongsToList } from "@/redux/features/playerSlice";
-import { useEffect, useState, useRef } from "react";
+import { useGetNewMusicQuery } from "@/redux/services/musicaApi";
+import { useEffect, useRef, useState } from "react";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import { useDispatch } from "react-redux";
 import Loading from "./Spinner";
 
 function PopularNewReleaseSection() {

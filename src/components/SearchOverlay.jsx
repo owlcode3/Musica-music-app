@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import StateContext from "@/StateContext";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
@@ -17,16 +17,16 @@ function SearchOverlay() {
       return () => document.removeEventListener("keyup", escKeyPressHandler);
    }, []);
 
-   function escKeyPressHandler(e) {
+   const escKeyPressHandler = e => {
       if (e.keyCode == 27) {
          setIsSearchOverlayOpen(false);
       }
-   }
+   };
 
-   function checkIfEmpty() {
+   const checkIfEmpty = () => {
       if (input === "") return false;
       return true;
-   }
+   };
 
    var artistParameter = {
       method: "GET",
@@ -36,7 +36,7 @@ function SearchOverlay() {
       }
    };
 
-   async function getArtists(e) {
+   const getArtists = async e => {
       e.preventDefault();
       try {
          setIsFetching(true);
@@ -54,7 +54,7 @@ function SearchOverlay() {
       } catch (e) {
          console.log(e.message);
       }
-   }
+   };
 
    return (
       <div className="search-overlay">
@@ -65,11 +65,7 @@ function SearchOverlay() {
             >
                <div className=" search-overlay__input-box ip">
                   <span className="search-overlay__search">
-                     <img
-                        className="search-overlay__search-icon"
-                        src="/src/assets/search.svg"
-                        alt=""
-                     />
+                     <img className="search-overlay__search-icon" src="/search.svg" alt="" />
                   </span>
                   <form onSubmit={getArtists}>
                      <input
@@ -89,7 +85,7 @@ function SearchOverlay() {
                         onClick={() => setInput("")}
                         className="search-overlay__search search-overlay__search--cancel"
                      >
-                        <img src="/src/assets/dialogcancel.svg" alt="" />
+                        <img src="/dialogcancel.svg" alt="" />
                      </span>
                   ) : (
                      ""
@@ -158,7 +154,7 @@ function SearchOverlay() {
                                  <div className="search-overlay__artist-details">
                                     <h2 className="search-overlay__artist-name">
                                        {searchedArtists[0].name}{" "}
-                                       <img src="/src/assets/icons8-i-v-b-.svg" alt="" />
+                                       <img src="/icons8-i-v-b-.svg" alt="" />
                                     </h2>
                                     <span className="search-overlay__artist-pro">
                                        {searchedArtists[0].type}
@@ -189,7 +185,7 @@ function SearchOverlay() {
 
                               <li className="search-overlay__featuring-card">
                                  <img
-                                    src="/src/assets/nr-img-3.svg"
+                                    src={searchedArtists[0].images[2].url}
                                     alt=""
                                     width="153"
                                     height="153"
@@ -201,7 +197,7 @@ function SearchOverlay() {
 
                               <li className="search-overlay__featuring-card">
                                  <img
-                                    src="/src/assets/nr-img-4.svg"
+                                    src={searchedArtists[0].images[2].url}
                                     alt=""
                                     width="153"
                                     height="153"
@@ -212,7 +208,7 @@ function SearchOverlay() {
                               </li>
 
                               <li className="search-overlay__featuring-card">
-                                 <img src="/src/assets/nr-img-5.svg" alt="" />
+                                 <img src={searchedArtists[0].images[2].url} alt="" />
                                  <div className="search-overlay__featuring-texts">
                                     <h2>{searchedArtists[0].genres[0]}</h2>
                                  </div>
@@ -234,7 +230,7 @@ function SearchOverlay() {
                                        <div className="search-overlay__artist-details">
                                           <h2 className="search-overlay__artist-name">
                                              {artist.name.split(",")[0]}{" "}
-                                             <img src="/src/assets/icons8-i-v-b-.svg" alt="" />
+                                             <img src="/icons8-i-v-b-.svg" alt="" />
                                           </h2>
                                           <span className="search-overlay__artist-pro">
                                              {artist.type}

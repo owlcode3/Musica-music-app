@@ -51,7 +51,7 @@ function TopCharts() {
                                     </div>
 
                                     <span className="top-charts__like">
-                                       <img src="/src/assets/Heart.svg" alt="" />
+                                       <img src="/Heart.svg" alt="" />
                                     </span>
                                  </div>
                                  <div className="top-charts__artist-box">
